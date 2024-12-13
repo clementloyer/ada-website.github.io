@@ -27,12 +27,12 @@
   :root {
     --gray-1: #3f3f3f;
     --gray-2: #32353a;
-    --gray-3: #25282c;
-    --gray-4: #151618;
-    --gray-5: #151618;
-    --gray-6: #111111;
-    --white-1: #eeeeee;
-    --white-2: #a9abb3;
+    --gray-3: #575757;
+    --gray-4: #c5368e;
+    --gray-5: #f8f239;
+    --gray-6: #3e3e3e;
+    --white-1: #000000;
+    --white-2: #191919;
   }
 }
 
