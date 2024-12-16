@@ -4,7 +4,8 @@ title: Jekyll Markdown
 date: 2021-11-04
 categories: ["jekyll", "Test Post", "first post"]
 ---
-
+ Test encore 
+ 
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`
 
 [Link to another page](./another-page.html).
@@ -12,6 +13,8 @@ Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`
 There should be whitespace between paragraphs.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+
+{% include graphs/test_graph.html %}
 
 #### Image
 
@@ -42,6 +45,9 @@ var fun = function lang(l) {
 };
 ```
 
+```js
+// Test
+```
 ```ruby
 # Ruby code with syntax highlighting
 GitHubPages::Dependencies.gems.each do |gem, version|
