@@ -14,7 +14,9 @@ There should be whitespace between paragraphs.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
-{% include graphs/test_graph.html %}
+
+{% include graphs/test_graph_minimal.html %}
+
 
 #### Image
 
