@@ -177,6 +177,12 @@ main {
   margin: 0 !important;
 }
 
+.content .graph {
+  width: 100%;
+  height: auto; 
+  margin: 20px -40px;
+}
+
 /* pre , code */
 .content,
 .content div,
