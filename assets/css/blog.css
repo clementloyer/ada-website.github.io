@@ -214,3 +214,16 @@ main {
     font-size: 1rem;
   }
 }
+.blog .title-part-large {
+  font-size: 60px; /* Adjust size */
+}
+
+.blog .title-part-small {
+  font-size: 24px; /* Adjust size */
+}
+
+.blog .graph {
+  width: device-width;
+  height: auto; 
+  margin: 20px -40px;
+}

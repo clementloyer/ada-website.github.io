@@ -1,16 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,900&display=swap" rel="stylesheet">
   {% include head.html %}
-  <body>
+  <body class="blog">
     <main>
-      {% include header.html %} {% include bio.html %}
+      {% include header.html %} <!--{% include bio.html %}-->
+
+      <!-- Add a main heading for the blog page -->
+      <h1 style="color: #2471ff;  font-family: 'Playfair Display'; font-style: italic; font-weight: 900; font-size: 90px; line-height: 75px; margin-top: -50px; margin-bottom: 100px; text-decoration: underline; text-decoration-thickness: 1px;">the <br> secret <br> formula</h1>
+      <p>We often hear that the second movie in a franchise is always worse than the first. 
+        However, human memories tend to be influenced by nostalgia, and it remains uncertain if this classic dinner table debate stands on tangible evidence. 
+        In this project, we aim to settle this debate by analyzing the list of movies and supplemental data from 
+        <a href="https://www.cs.cmu.edu/~ark/personas/" target="_blank" style="color: #2471ff; text-decoration: underline;">
+        the CMU Movie Summary Corpus
+        </a>
+        .
+        The preliminary questions to this analysis are, "What makes a good franhcise movie?" and “Are franchise movies more profitable than non-franchise movies?”.
+
+        To answer these questions, we first have to look at what we’re working with !
+      </p>
+
+      {% include graphs/franchise_pie.html %}
+
+      <!-- Add a subheading or additional content -->
+      <h1 style="
+        color: #2471ff;  
+        font-family: 'Playfair Display'; 
+        font-style: italic; 
+        font-weight: 900; 
+        font-size: 40px; 
+        line-height: 75px; 
+        margin-top: -50px; margin-bottom: 20px;">
+      But, what is a <span style=" font-family: JetBrains Mono">[franchise]</span>?</h1>
+
+      <p>
+        Have you heard of <strong>Star Wars</strong>? <strong>Harry Potter</strong>? Then you know what a franchise is! 
+        They are basically what we often call <em>Sagas</em>. From a data analysis point of view, we consider as movie franchise any a sequel of at least two movies, that share similraities in terms of characters, plot, and setting. Some franchises are also collections of  
+      </p>
+
       <section class="articles">
         {% for post in site.posts %}
         <article class="article">
           <h2 class="article-title">
             <a href="{{site.baseurl}}{{post.url}}"> {{post.title}} </a>
           </h2>
-          <small class="date">{{post.date | date_to_string}}</small>
+          {%if forloop.index == 1 %}
+            <small> Click to watch the fight </small>
+          {% endif %}
+
+          {%if forloop.index == 2 %}
+            <small> Click to learn more </small>
+          {% endif %}
+          
           <div class="categories">
             {% for c in post.categories %}
             <a href="#!" data-base-url="{{site.baseurl}}" class="category"
@@ -19,6 +61,15 @@
             {% endfor %}
           </div>
         </article>
+
+        <!-- Add custom content between posts (works as loop number)-->
+        {% if forloop.index == 1 %}
+        <div class="special-content">
+          <h4>Midway Break</h4>
+          <p>Don't forget to check out my <a href="/about">About Me</a> page for more insights!</p>
+        </div>
+        {% endif %}
+
         {%endfor%}
       </section>
       {% include footer.html %}
