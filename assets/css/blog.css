@@ -227,3 +227,10 @@ main {
   height: auto; 
   margin: 20px -40px;
 }
+
+.blog .keyword-highlight {
+  background-color: rgb(178, 178, 178);
+  color: #000000;
+  padding: 0 5px;
+  border-radius: 0px;
+}
