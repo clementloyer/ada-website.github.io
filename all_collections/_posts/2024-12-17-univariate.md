@@ -64,7 +64,7 @@ Next, we shift our focus to ethnicity groups. Contrary to actor gender informati
 {% include graphs/plot_12.html %}
 
 
-The percentages in each of the plots above sum up to 100%. Notice that **compared to non-franchise movies, franchise movies have fewer percentage of Asian actors** (Franchise: 14.78%, Non-franchise: 31.18%). If we compared this to the 4 pie charts from the previous section above, the two pie charts on the righthand side of the figure show that the proporitions of movies from Asia (excluding Russia, Oceania and Middle East) in franchise and non-franchise movies are not as different as the disparity observed earlie in Asian actor percentages.
+The percentages in each of the plots above sum up to 100%. Notice that **compared to non-franchise movies, franchise movies have fewer percentage of Asian actors** (Franchise: 14.78%, Non-franchise: 31.18%). If we compared this to the pie charts from the country section above, we see that the proporitions of movies from Hong Kong and Japan are very present in franchise and non-franchise movies are not as different as the disparity observed earlie in Asian actor percentages.
 
 This means that **the disparity in the percentage of Asian actors comes from factors other than movie production location**. It is hard to identify the exact cause for this from our analysis only, but a potential confounding factor is the difference in genres: perhaps certain movie genres are more likely to be franchised which are underrepresented by Asian actors.
 
