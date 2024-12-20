@@ -36,7 +36,6 @@ Adventure, Fantasy, Animation, Science Fiction, and Action are the top five most
 
 Are their some genres where the second movie is more profitable then the first movies ? 
 {% include graphs/plot_21.html %}
-
 [gernes evolution]
 No, unless for documentary. One can say that the stereotype still increases. 
 
