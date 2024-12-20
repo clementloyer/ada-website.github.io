@@ -13,7 +13,7 @@ Instead of directly inspecting relationship between variables, we can also train
 We balanced the number of franchise and non-franchise movies in the training data by subsampling, and the model achieved 81.7% test accuracy which is significantly better than the baseline (50% for binary prediction)! Below, we show the summary plot for Shapley value analyis:
 
 <div style="text-align: center;">
-    <img src="/assets/images/shap_summary_plot.jpg" alt="SHAP Summary Plot" width="550" height="700">
+    <img src="{{site.baseurl}}/assets/images/shap_summary_plot.jpg" alt="SHAP Summary Plot" width="550" height="700">
 </div>
 
 Here, we're showing the top 20 features that have the highest mean absolute Shapley value. Recall that, these features are those of first movies in franchise or of non-franchise movies from which we constructed the dataset for this analysis. The color bar shows the distribution of values within each feature, while gray dots signify missing values. The high Shapley value (x-axis) indicates positive contribution to model's prediction (= prediction being 1, there will be a second movie), and the low Shapley value means negative contribution.
