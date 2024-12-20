@@ -71,6 +71,9 @@ This means that **the disparity in the percentage of Asian actors comes from fac
 #### Sentimental analysis
 In this section, we examine the narrative of each character in movie plots. We leveraged GPT o4-mini to extract adjectives related to each character, and calculate sentiment scores using TextBlob by taking an average of sentiment scores for adjectives. We show examples of positive and negative adjectives extracted:
 
+<div style="text-align: center;">
+    <img src="{{ site.baseurl }}/assets/images/plot_30.png" alt="sentiment" width="550" height="700">
+</div>
 
 We also plot the distribution of sentiment score per racial group. Note that among 99719 actors whose ethnicity information is available, we could only extract adjectives for 31095 characters (=actors). This is because some characters are not mentioned in the movie plot at all.
 
@@ -98,14 +101,14 @@ What is your favorite franchise? Harry Potter, Star Wars or James Bond?
 
 With this interactive graph now you can see which movies in its franchise had the best box office or the lowest, and even its budget. 
 
-https://lavine.pythonanywhere.com/
+<iframe 
+        src="https://lavine.pythonanywhere.com/"
+        style="width: 100%; height: 950px; border: none; border-width: 1px;"> 
+        
+</iframe>
+
+
 
  A franchise movie is more successful but  how can this be explained ? **What** makes them more successful ? **Why** does franchise exists ? 
 
 What if creating a second movie was a less risky investment then one single movie. In fact, if people liked the story plot of a movie, it's probably likely that they’ll go see the second movie right? In that case, what is the ratio between the revenue and the budget of our movies? Go to the next page to elaborate this new idea.
-
-
-
-![Dummy Image 2](https://picsum.photos/1200/400)
-
-
