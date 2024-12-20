@@ -23,5 +23,4 @@ defaults:
     values:
       layout: "post"
       permalink: /posts/:title/
-baseurl: "/https://clementloyer.github.io/ada-website.github.io/"
 exclude: ["sitemap.xml", "feed.xml", "LICENSE", "README.md"]
