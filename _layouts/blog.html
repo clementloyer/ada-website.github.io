@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="{{ '/assets/css/blog.css' | relative_url }}">
+</head>
+
 
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,900&display=swap" rel="stylesheet">
   {% include head.html %}
@@ -20,8 +27,10 @@
 
         To answer these questions, we first have to look at what we’re working with !
       </p>
-
-      {% include graphs/franchise_pie.html %}
+      <div class="graph-container">
+        {% include graphs/franchise_pie.html %}
+      </div>
+      
 
       <!-- Add a subheading or additional content -->
       <h1 style="
@@ -46,6 +55,18 @@
         style="width: 100%; height: 1200px; border: none; border-width: 1px;"> 
         
       </iframe>
+      
+      
+      <p>
+        Have you heard of <strong>Star Wars</strong>? <strong>Harry Potter</strong>? Then you know what a franchise is! 
+        They are basically what we often call <span class="keyword-highlight">Sagas</span>. 
+        From a data analysis point of view, we consider as movie franchise <strong>any sequel of at least two movies</strong>, whose stories are connected, or that share similarities in terms of characters, plot, and/or setting. 
+        That way, both the Harry Potter series or the multiple remakes of Alice in Wonderland are considered franchises.
+      </p>
+
+      <div class="graph-container" width="100%">
+        {% include graphs/boxplot_intro.html %} 
+      </div>
 
       <section class="articles">
         {% for post in site.posts %}
