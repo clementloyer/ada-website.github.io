@@ -22,7 +22,7 @@ Same as **FF**
 ### Time representation
 The release date distributions are relatively similar overall. However, most franchises tend to have closely spaced release periods for their entire movies. This pattern aligns with the fact that the majority of franchises consist of four movies or fewer. That said, exceptions do exist—for exemple the Bambi collection includes only two movies, but the releases are far apart (1942 and 2006).
 [time graph]
-{% include graphs/Franchise_densitsy.html %}
+{% include graphs/Franchise_density.html %}
 ### Countries repartition
 Which countries produce movies? Is there a distinction between the countries of origin for franchise and non-franchise films?
 
