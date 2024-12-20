@@ -37,7 +37,7 @@ Here the main genre is `horror` and `thriller`; this combination makes it really
 
 {% include graphs/franchise_clusters_2.html %}
 
-**Outliers:** The outliers are the franchise that the algorithm couldn't group with the other franchise, we have James Bond who was already used as an example and two less known franchise that got separated for their high vote (note that those have genre closest to the horror/thriller cluster 4 that's why its consider high).
+**Outliers:** The outliers are the franchise that the algorithm couldn't group with the other franchise, we have James Bond who was already used as an example and two less known franchise that got separated for their high vote (note that those have genre closest to the horror/thriller (cluster 4), that's why its consider high).
 
 There are a few other interesting things to notice, first most of the franchise kind of perform the same in terms of ratio across every genre and budget. The thing that differentiate a franchise that performs well from one that performs really well is an outlier behavior that with this dataset cannot be explained clearly. 
 
@@ -65,7 +65,7 @@ First cluster, where the ratio has improved, it is mainly high budget movies tha
 </p><p>
 <b>Cluster -3:</b><i> Number of franchises: 13<br>
 Highlight: Ice Age, Twilight, Austin Powers </i>
-This is a really interesting cluster; it looks like a part of those second movies were not really appreciated even tho it got a increased in revenue from the first movie, maybe the fame of the first movie was used to create a lowered budget one to make a second movie? Note that its mainly comedy, drama and romance, which can also sometime be genres that are harder to make a second story.
+This is a really interesting cluster; it looks like a part of those second movies were not really appreciated according to the rating even though it got an increased of revenue from the first movie, maybe the fame of the first movie was used to create a lowered budget one to make a second movie? This could explain the revenue of the second movie being higher and the rating lower. Note that its mainly comedy, drama and romance, which can also sometime be genres that are harder to make a second story.
 </p><p>
 <b>Cluster -2:</b><i> Number of franchises: 4<br>
 Highlight: Arthur and the Invisibles, World of Watches, The Transporter, The Boondock Saints</i>
@@ -96,7 +96,7 @@ It's the comedy and family clusters, still around a fourth of the second don't h
 <b>Cluster 4:</b><i> Number of franchises: 41<br>
 Highlight: Star Wars, Indiana Jones, Fast and the Furious, Transformers, Sherlock Holmes, The Expendables, Iron Man
 </i>
-This cluster and the next one are the high budget ones, that get worse result than the first movie in terms of ratio but actually it stays mostly higher than on. It means that even though the ratio is worse around the revenue stays the same, because budget increased. Here we have the action and blockbusters.
+This cluster and the next one are the high budget ones, that get worse result than the first movie in terms of ratio but actually it stays mostly higher than one. It means that even though the ratio is worse around the revenue stays the same, because budget increased. Here we have the action and blockbusters.
  </p>
 
   </div>
