@@ -164,9 +164,7 @@ p {
 }
 
 code.language-plaintext.highlighter-rouge {
-  background-color: #f8f9fa; /* Light gray */
-  color: #333333; /* Dark text */
+  background-color: #a4a4a4; /* Light gray */
+  color: #000000; /* Dark text */
   padding: 2px 4px;
-  border-radius: 4px;
-  
 }
