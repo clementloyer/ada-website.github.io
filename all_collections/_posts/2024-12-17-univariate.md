@@ -79,21 +79,18 @@ We also plot the distribution of sentiment score per racial group. Note that amo
 It seems like there is not much difference in the inter-quantile ranges (Q3-Q1) across groups. With our dataset, we did not have enough actors with ethnicity information to conduct the sentiment analysis per genre per country, but if we were able to do that, this could have illustrated the racial bias existant in the movie industry such as which group is more likely to play a hero/heroin role in romance movies.
 
 ### Movie revenue box office and their budget 
-And finally, the **money question** ! First 
+And finally, the **money question** ! First, how much did these movies cost to produce ?
 
-**How** much money did they cost?
-Does franchise movie have a largest budget? Yes! 
+So, do franchise movies have a larger budget? Overall, yes! Almost twice as much ! 
 
-In general it is all most the double! 
+To be as rigorous as possible, all the values regarding expenses were adjusted to the inflation rate at the release time of each movie. Now we can see the “real revenue” and “real budget”.
 
-Too be as rigorous as possible all the values regarding expenses were adjusted to the inflation rate at the release time of each movies. Now we can see the “real revenue” and “real budget”.
-
-In general franchise movies has a larger budget then the other movies, but the difference is even more significant when looking at average revenue. 
 [box plot budget 13]
 
+And now, the question on everyone’s minds: How well do they perform? **How much money do they bring back ?** 
 
-Let’s finally, ask the question on everyone’s minds: How well do they perform? How high is their box office revenue? 
 [box plot revenue 8]
+
 Here the difference is even more flagrant! In average a franchise movie makes 5 times more box office revenue then other movies! 
 
 Are you persuaded now that a movie in a franchise is more successful? 
@@ -106,9 +103,9 @@ https://lavine.pythonanywhere.com/
 
  A franchise movie is more successful but  how can this be explained ? **What** makes them more successful ? **Why** does franchise exists ? 
 
-What if creating a second movie was a less risky investment then one single movie. In fact, if people liked the story plot of a movie it might be likely that they’ll go see the second movie? In that case, what are the ratio between the revenue and the budget?
+What if creating a second movie was a less risky investment then one single movie. In fact, if people liked the story plot of a movie, it's probably likely that they’ll go see the second movie right ? In that case, what is the ratio between the revenue and the budget of our movies ?
 
-From this boxplot we can know that the average ratio of revenue over budget is twice larger then in non-franchise movies. How ever we don't see a large evolution for sequels in franchise. 
+From this boxplot we can know that the average ratio of revenue over budget is twice larger then in non-franchise movies! However, we don't see a large evolution for sequels in franchise. 
 
 [box plot ratio]
 
