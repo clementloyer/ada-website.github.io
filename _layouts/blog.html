@@ -16,14 +16,28 @@
 
       <!-- Add a main heading for the blog page -->
       <h1 style="color: #2471ff;  font-family: 'Playfair Display'; font-style: italic; font-weight: 900; font-size: 90px; line-height: 75px; margin-top: -50px; margin-bottom: 100px; text-decoration: underline; text-decoration-thickness: 1px;">the <br> secret <br> formula</h1>
-      <p>We often hear that the second movie in a franchise is always worse than the first. 
-        However, human memories tend to be influenced by nostalgia, and it remains uncertain if this classic dinner table debate stands on tangible evidence. 
-        In this project, we aim to settle this debate by analyzing the list of movies and supplemental data from 
-        <a href="https://www.cs.cmu.edu/~ark/personas/" target="_blank" style="color: #ffe924; text-decoration: underline;">
-        the CMU Movie Summary Corpus
-        </a>
-        .
-        The preliminary questions to this analysis are, "What makes a good franhcise movie?" and “Are franchise movies more profitable than non-franchise movies?”.
+      <p>It is often believed that the second movie is always worse than the first one. 
+        However, human memory tends to be influenced by nostalgia, and it remains uncertain whether this classic dinner table debate around movie franchises stands on tangible evidence. 
+        In this project, we aim to settle this debate by analyzing the <strong>list of movies and supplemental data from</strong> 
+        <a href="https://www.cs.cmu.edu/~ark/personas/" target="_blank" style="color: #676767; text-decoration: underline;">
+        the CMU Movie Summary Corpus</a>.
+        <br><br>        
+        In the premices of this data analysis, multiple questions arose.
+        </p>  
+        <h1 style="
+        color: #2471ff;  
+        font-family: 'Playfair Display'; 
+        font-style: italic; 
+        font-weight: 900; 
+        font-size: 25px; 
+        line-height: 30px; 
+        margin-top: 30px; margin-bottom: 20px; margin-left: 5px;">
+      "What makes a good movie franchise?" <br> 
+      “Are franchised movies more profitable than non-franchised movies?”.
+      
+      </h1>
+       <p>
+      
 
         To answer these questions, we first have to look at what we’re working with !
       </p>
@@ -71,6 +85,23 @@
       <div class="graph-container" width="100%">
         {% include graphs/plot_4.html %}
       </div>
+      
+
+      <section class="articles">
+        <article class="article">
+          <h2 class="article-title">
+            <a href="{{site.baseurl}}posts/pattern-investigation"> Franchise Analysis </a>
+          </h2>
+          <small> Click to learn more </small>
+          <div class="categories">
+            <a href="#!" data-base-url="{{site.baseurl}}" class="category"
+              >Data Analysis</a
+            >
+          </div>
+        </article>
+      </section>
+
+
 
       <section class="articles">
         {% for post in site.posts %}

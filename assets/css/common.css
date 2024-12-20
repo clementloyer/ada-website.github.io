@@ -159,3 +159,6 @@ hr {
   display: block;       /* Make sure the graph container behaves as a block element */
   margin: 0 auto;       /* Center the graph within the container */
 }
+p {
+  text-align: justify;
+}
