@@ -126,39 +126,47 @@
       </section>
 
 
+    
       <section class="articles">
-        {% for post in site.posts %}
         <article class="article">
           <h2 class="article-title">
-            <a href="{{site.baseurl}}{{post.url}}"> {{post.title}} </a>
+            <a href="/posts/pattern-investigation"> Pattern Investigation </a>
           </h2>
-          {%if forloop.index == 1 %}
-            <small> Click to watch the fight </small>
-          {% endif %}
+          <small> Click to learn more </small>
 
-          {%if forloop.index == 2 %}
-            <small> Click to learn more </small>
-          {% endif %}
-          
           <div class="categories">
-            {% for c in post.categories %}
-            <a href="#!" data-base-url="{{site.baseurl}}" class="category"
-              >{{c}}</a
+            <a href="#!" data-base-url="" class="category"
+              >Pattern</a
             >
-            {% endfor %}
+          
+            <a href="#!" data-base-url="" class="category"
+              >Data Analysis</a
+            >
           </div>
         </article>
-
-        <!-- Add custom content between posts (works as loop number)-->
-        {% if forloop.index == 1 %}
-        <div class="special-content">
-          <h4>Midway Break</h4>
-          <p>Don't forget to check out my <a href="/about">About Me</a> page for more insights!</p>
-        </div>
-        {% endif %}
-
-        {%endfor%}
       </section>
+
+      <section class="articles">
+        <article class="article">
+          <h2 class="article-title">
+            <a href="/posts/model-based-analysis"> Shapley value analysis: what is the recipe for franchise movies? </a>
+          </h2>
+          <small> Click to learn more </small>
+
+          <div class="categories">
+            <a href="#!" data-base-url="" class="category"
+              >Model Based</a
+            >
+          
+            <a href="#!" data-base-url="" class="category"
+              >Data Analysis</a
+            >
+          </div>
+        </article>
+      </section>
+
+      
+      
       {% include footer.html %}
     </main>
     {% include category-modal.html%}
