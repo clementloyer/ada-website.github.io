@@ -13,7 +13,7 @@ And how do them compare to non-franchise movies ? Let’s take it step by step:
 
 Where were the countries produced ?
 
-plot 9
+{% include graphs/plot_9.html %}
 
 First, let’s look at a network graph to see where the countries were produced, and how they interact (edges and nodes) ⇒ we can’t really see anything …
 
@@ -25,10 +25,6 @@ How about Japan ? If you go deeper, most of the franchise from Japan are reinter
 
 Now, what about the genres of our movies ?
 
-
-
-{% include graphs/plot_3.html %} 
-{% include graphs/plot_7.html %}
     
 
 
