@@ -63,6 +63,10 @@ SUPER INTERACTIVE PLOT
 
 What if creating a second movie was a less risky investment then one single movie. In fact, if people liked the story plot of a movie it might be likely that they’ll go see the second movie ? In that case, what are the ratio between the revenue and the budget  ?
 
+
+
+
+
 ![Dummy Image 2](https://picsum.photos/1200/400)
 
 
