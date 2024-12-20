@@ -72,7 +72,7 @@ This means that **the disparity in the percentage of Asian actors comes from fac
 In this section, we examine the narrative of each character in movie plots. We leveraged GPT o4-mini to extract adjectives related to each character, and calculate sentiment scores using TextBlob by taking an average of sentiment scores for adjectives. We show examples of positive and negative adjectives extracted:
 
 <div style="text-align: center;">
-    <img src="{{ site.baseurl }}/assets/images/plot_30.jpg" alt="sentiment" width="550" height="700">
+    <img src="{{ site.baseurl }}/assets/images/plot_30.png" alt="sentiment" width="550" height="700">
 </div>
 
 We also plot the distribution of sentiment score per racial group. Note that among 99719 actors whose ethnicity information is available, we could only extract adjectives for 31095 characters (=actors). This is because some characters are not mentioned in the movie plot at all.
