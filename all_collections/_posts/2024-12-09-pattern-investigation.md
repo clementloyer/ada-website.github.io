@@ -6,7 +6,7 @@ categories: ["Data story", "Milestone 3"]
 ---
 Franchise can be really different from one another, most of them are pretty classic with around 3-4 movies and last around 8 years as seen in univariate part and some can be really special like the James Bond franchise, which is around 25 movies that lasted over 45 years and that has a high average revenue. We also have re-makes that are still considered a franchise of two movies spaced by more than 15 years. This is a reason that makes it hard to really see how the franchise behaves. In an attempt to make this more clean, we clustered the franchise with the k-nearest neighbors algorithm, let’s have a look at the results:
 
-      {% include graphs/franchise_clusters.html %}
+{% include graphs/franchise_clusters.html %}
 
 To get an idea of how the cluster were made, the genre is the most clear one to understand which cluster represents what type of franchises. It looks like the genre was the features that have a lot of impact on the algorithm. Looking at both the results and the collections in each cluster, we were able to give a general name for each cluster:
 
