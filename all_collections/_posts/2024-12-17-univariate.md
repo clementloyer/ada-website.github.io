@@ -35,7 +35,7 @@ Other movies :
 
 Humm, as pretty as it is, nothing meaningful can be extracted from these maps ... Let's look closer :
 
-{%include graphs/plot_7_3.html%}
+{% include graphs/plot_7_3.html %}
 We see that the movies coming from the United-States, Japan, Hong-Kong and Canada represent more of the total franchise movies than for non-franchise movies! 
 The presence of the USA is not a surprise, everyone knows the influence of Holloywood and the multpile blockbuster franchise such as the Marvel, Superman, etc... 
 
@@ -85,11 +85,10 @@ So, do franchise movies have a larger budget? Overall, yes! Almost twice as much
 
 To be as rigorous as possible, all the values regarding expenses were adjusted to the inflation rate at the release time of each movie. Now we can see the “real revenue” and “real budget”.
 
-[box plot budget 13]
+{% include graphs/plot_13.html %}
 
 And now, the question on everyone’s minds: How well do they perform? **How much money do they bring back ?** 
-
-[box plot revenue 8]
+{% include graphs/plot_8.html %}
 
 Here the difference is even more flagrant! In average a franchise movie makes 5 times more box office revenue then other movies! 
 
@@ -103,11 +102,8 @@ https://lavine.pythonanywhere.com/
 
  A franchise movie is more successful but  how can this be explained ? **What** makes them more successful ? **Why** does franchise exists ? 
 
-What if creating a second movie was a less risky investment then one single movie. In fact, if people liked the story plot of a movie, it's probably likely that they’ll go see the second movie right ? In that case, what is the ratio between the revenue and the budget of our movies ?
+What if creating a second movie was a less risky investment then one single movie. In fact, if people liked the story plot of a movie, it's probably likely that they’ll go see the second movie right? In that case, what is the ratio between the revenue and the budget of our movies? Go to the next page to elaborate this new idea.
 
-From this boxplot we can know that the average ratio of revenue over budget is twice larger then in non-franchise movies! However, we don't see a large evolution for sequels in franchise. 
-
-[box plot ratio]
 
 
 ![Dummy Image 2](https://picsum.photos/1200/400)
