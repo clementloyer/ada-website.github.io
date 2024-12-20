@@ -9,7 +9,9 @@ categories: ["jekyll", "Test Post", "first post"]
 Test jsp
 
 Je comprends pas où change quoi
- 
+
+{% include graphs/plot_7.html %}
+
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`
 
 [Link to another page](./another-page.html).
@@ -19,7 +21,14 @@ There should be whitespace between paragraphs.
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
 
-
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+  <div style="background-color: lightgray; padding: 20px;">
+    Column 1 Content
+  </div>
+  <div style="background-color: lightgray; padding: 20px;">
+    Column 2 Content
+  </div>
+</div>
 
 
 #### Image

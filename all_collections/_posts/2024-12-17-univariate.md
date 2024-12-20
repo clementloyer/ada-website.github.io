@@ -6,6 +6,8 @@ categories: ["Data story", "Milestone 3"]
 ---
 
 ### Univariate analysis : LOOK AT OUTLIERS AND SINGLE THEM OUT
+Add to intro : After performing a Z-score test we hae 20 outiliers statisticly. 
+
 
 And how do them compare to non-franchise movies ? Let’s take it step by step:
 
@@ -19,7 +21,7 @@ plot 7
 
 We see that the movies coming from the United-States, Japan, Hong-Kong and Canada represent more of the total franchise movies than for non-franchise movies ! 
 The presence of the USA is not a surprise, everyone knows the influence of Holloywood and the multpile blockbuster franchise such as the Marvel, Superman, etc... 
-How about Japan ? If you dip deeper, most of the franchise from Japan are reinterpreted mangas such as : Tora-san (48 movies), Doremon (33 movies) and also the well known One piece, Dragon ball Z...
+How about Japan ? If you go deeper, most of the franchise from Japan are reinterpreted mangas such as : Tora-san (48 movies), Doremon (33 movies) and also the well known One piece, Dragon ball Z...
 
 Now, what about the genres of our movies ?
 
@@ -36,10 +38,10 @@ How were they appreciated by the public ?
 
 This is the distribution of the average score vote for both franchise and non-franchise, it is skewed distribution. The median of both are close (6.1 for franchise, 6 for non franchise), there is no important difference between the two types of movies. 
 
-It is often said that the second movie is not as good, but is that really true ? What is the average score threw the different movies in a franchise ? 
+It is often said that the second movie is not as good, but is that really true ? What are the average score threw the different movies in a franchise ? 
 
 DISTRIBUTION
-At this stage of the data analysis, the stereotype holds: the average rating tends to drop for the second movie. However, as mentioned earlier, franchise films include several outliers. So, what’s the recipe to make the best possible sequel?
+At this stage of the data analysis, the stereotype holds: the average rating tends to drop for the second movie. However, as mentioned earlier, franchise films include several outliers. So, what could be the recipe to make the best possible sequel?
 
 How much money did they cost ?
 
@@ -49,7 +51,7 @@ Does franchise movie have a largest budget ? Yes !
 
 In general it is all most the double ! 
 
-Too be as rigorous as possible all the values regarding expenses were match to the inflation rate at the release time of each movies. Now we can see the “real revenue” and “real budget” 
+Too be as rigorous as possible all the values regarding expenses were adjusted to the inflation rate at the release time of each movies. Now we can see the “real revenue” and “real budget” .
 
 In general franchise movies has a larger budget then the other movies, but the difference is even more significant when looking at average revenue. 
 
