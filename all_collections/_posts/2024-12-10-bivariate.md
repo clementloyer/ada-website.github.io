@@ -4,31 +4,29 @@ title: "Biavariate Analysis"
 date: 2024-12-10
 categories: ["Data story", "Milestone 3"]
 ---
-### How much are franchise movies appreciated by the public?
-It is often said that the second movie is not as good, but is that true? What are the average score threw the different movies in a franchise? 
+
+### How do budget and revenue behave ?
+First, to start back where we ended our **univariate analysis**, let's look at our money features : how much does the money invested in a movie (its budget) influence how much it will make (the revenue) ? 
+
+{% include graphs/plot_15.html %}
+
+A correlation exists between movie revenue and budget ! And it is even more important for franchise movies !
+
+Now we might questioned what else could influence the success of franchise movies. 
+
+Let's see if the ratio of the budget over the revenue increases or not throughout the franchise, to have an idea about the return on investment over the years in a franchise : 
+{% include graphs/plot_20.html %}
+
+It decreases. Seems like the general opinion was right about second movies ...
+
+### How much are franchise movies appreciated by the public ?
+
 
 [vote through the sequel 18]
 {% include graphs/plot_18.html %}
 At this stage of the data analysis, the stereotype holds: the average rating tends to drop for the second movie. However, as mentioned earlier, franchise films include several outliers. So, what could be the recipe to make the best possible sequel?
 
-### How do budget and revenue behave?
-To keep in mind every values concerning profit, budget, revenue are inflation adjusted. 
-
-As supected before there is a positvie linear regression between revenue and budget that is even greater in franchise movies. 
-
-{% include graphs/plot_15.html %}
-
-[PLOT CORRELATION BUDGET _REVENUE]
-
-Now we might questioned what else could influence the success of franchise movies. 
-
-Let's see if the ratio of the budget over the revenue increases or not throughout the franchise : 
-{% include graphs/plot_20.html %}
-
-It decreases. The stereotype continues...
-
-
-**What** are the most profitable **genres**? 
+### What are the most profitable genres ? 
 {% include graphs/plot_16.html %}
 PLOT "ADJUSTED BOX OFFICE REVENUE BY GENRE" 16
 
