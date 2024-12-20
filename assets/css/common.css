@@ -148,3 +148,14 @@ hr {
   border-right: none !important;
   margin-bottom: 1.75rem !important;
 }
+
+.graph-container {
+  width: 100%;          /* Ensure the graph takes up the full width of its container */
+  margin: 20px 0;       /* Add spacing around the graph */
+}
+
+.graph-container iframe, 
+.graph-container div {
+  display: block;       /* Make sure the graph container behaves as a block element */
+  margin: 0 auto;       /* Center the graph within the container */
+}
