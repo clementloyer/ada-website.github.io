@@ -35,8 +35,11 @@ PLOT "ADJUSTED BOX OFFICE REVENUE BY GENRE" 16
 
 Adventure, Fantasy, Animation, Science Fiction, and Action are the top five most profitable genres. Interestingly, this does not align with the most frequently occurring genres. 
 
-How about our favorite franchise? Does it follow the analysis? 
-Acctually yes! 
+Are their some genres where the second movie is more profitable then the first movies ? 
+
+[gernes evolution]
+No, unless for documentary. One can say that the stereotype still increases. 
+
 
 **Does** time between movie releases in the same franhcise influence its success ? 
 
