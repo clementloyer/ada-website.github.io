@@ -6,7 +6,7 @@ categories: ["Data story", "Milestone 3"]
 ---
 
 ## Univariate analysis : LOOK AT OUTLIERS AND SINGLE THEM OUT
-Throughtout the entire data story we will have a red line exemple, how about one of the greastest movie franchise... **FF**
+Throughtout the entire data story we will have a red line exemple, how about one of the greastest movie franchise... **Star Wars**
 
 How do should we compare franchise and non-franchise movies? Let's break it down step by step:
 
@@ -16,8 +16,9 @@ First, what about the **genres** of movies?
 {% include graphs/plot_4.html %}
 Here, we can see that Dramas and Romances are a lot more present (three and two times more, respectively) in non-franchise movies than in franchise movies. Why is that ? Do the viewers lose interest when they are presented multiple dramas in a row ? If so, how would that translate ? In worse ratings ? Less box-office revenues ? 
 
-The opposite is true for Action, Adventure, and Science-Fiction movies : they are around twice as present in franchise movies !
-Same as **FF**
+The opposite is true for Action, Adventure, and Science-Fiction movies : they are around twice as present in franchise movies!
+
+What a coincidence **Star Wars** has exaclty those genres!
 
 ### Time representation
 The release date distributions are relatively similar overall. However, most franchises tend to have closely spaced release periods for their entire movies. This pattern aligns with the fact that the majority of franchises consist of four movies or fewer. That said, exceptions do exist—for exemple the Bambi collection includes only two movies, but the releases are far apart (1942 and 2006).
@@ -40,11 +41,16 @@ The presence of the USA is not a surprise, everyone knows the influence of Hollo
 
 How about Japan? If you go deeper, most of the franchise from Japan are reinterpreted mangas such as: Tora-san (48 movies), Doremon (33 movies) and also the well known One piece, Dragon ball Z...
 
-Funny, **FF** is produced in 
+Funny, **Star Wars** is produced in the United-State! 
 ### Is there a difference in public appreciation between franchise movies and non-franchise movies?
 
 This is the distribution of the average score vote for both franchise and non-franchise, it is skewed distribution. The median of both are close (6.1 for franchise, 6 for non franchise), there is no important difference between the two types of movies. 
 [density vote 17]
+{% include graphs/plot_17.html %}
+
+
+**Star Wars** has a rate of 7,5, it is not surp^ising that this famous saga is above the average. 
+
 ### Actor identity analysis
 
 Racial bias is an important topic in the movie industry and we were interested in **whether the actors of certain ethnicity/gender groups appear more or less commonly in franchise movies**. Are they depicted positively (*hero/heroine*) or negatively (*villain*)?
@@ -52,10 +58,12 @@ Racial bias is an important topic in the movie industry and we were interested i
 To begin with, we look at actor gender distribution of franchise and non-franchise movies.
 
 [pie chart gender ration]
+{% include graphs/plot_11.html %}
 
 It seems that actor gender distribution remains the same for franchise and non-franchise movies. **This is unsurprising as we can agree that there are particulalry many female characters in franchise movies than non-franchise movies**, at least anecdotally.
 
 Next, we shift our focus to ethnicity groups. Contrary to actor gender information, actor ethnicity is not available for the majority of actors (available for 99719/395202 = 25.2%)... Upon observing the dataset, **we hypothesized that the actors with known ethnicity are those with more publicity**, so they are more likely to play main roles in the movies. The ethnicity distribution of these main actors can be representative of which racial group is more or less featured in the movie. Having this in mind, we will proceed to visualize actors' racial group distribution for franchise and non-franchise movies.
+{% include graphs/plot_12.html %}
 
 [Racial group distribution comparison] bar chart
 

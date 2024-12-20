@@ -8,7 +8,7 @@ categories: ["Data story", "Milestone 3"]
 It is often said that the second movie is not as good, but is that true? What are the average score threw the different movies in a franchise? 
 
 [vote through the sequel 18]
-
+{% include graphs/plot_18.html %}
 At this stage of the data analysis, the stereotype holds: the average rating tends to drop for the second movie. However, as mentioned earlier, franchise films include several outliers. So, what could be the recipe to make the best possible sequel?
 
 ### How do budget and revenue behave?
@@ -26,8 +26,10 @@ Let's see if the budget and revenue increases or not throughout the franchise :
 
 It decreases. The stereotype continues...
 
+{% include graphs/plot_20.html %}
 The ratio of the revenue over the budget decreases also. 
-[plot 20 ]
+
+
 
 **What** are the most profitable **genres**? 
 
