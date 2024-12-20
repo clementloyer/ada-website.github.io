@@ -112,9 +112,3 @@ With this interactive graph now you can see which movies in its franchise had th
  A franchise movie is more successful but  how can this be explained ? **What** makes them more successful ? **Why** does franchise exists ? 
 
 What if creating a second movie was a less risky investment then one single movie. In fact, if people liked the story plot of a movie, it's probably likely that they’ll go see the second movie right? In that case, what is the ratio between the revenue and the budget of our movies? Go to the next page to elaborate this new idea.
-
-
-
-![Dummy Image 2](https://picsum.photos/1200/400)
-
-
