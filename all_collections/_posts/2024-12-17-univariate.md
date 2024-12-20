@@ -45,7 +45,6 @@ Funny, **Star Wars** is produced in the United-State!
 ### Is there a difference in public appreciation between franchise movies and non-franchise movies?
 
 This is the distribution of the average score vote for both franchise and non-franchise, it is skewed distribution. The median of both are close (6.1 for franchise, 6 for non franchise), there is no important difference between the two types of movies. 
-[density vote 17]
 {% include graphs/plot_17.html %}
 
 
@@ -57,7 +56,6 @@ Racial bias is an important topic in the movie industry and we were interested i
 
 To begin with, we look at actor gender distribution of franchise and non-franchise movies.
 
-[pie chart gender ration]
 {% include graphs/plot_11.html %}
 
 It seems that actor gender distribution remains the same for franchise and non-franchise movies. **This is unsurprising as we can agree that there are particulalry many female characters in franchise movies than non-franchise movies**, at least anecdotally.
@@ -65,7 +63,6 @@ It seems that actor gender distribution remains the same for franchise and non-f
 Next, we shift our focus to ethnicity groups. Contrary to actor gender information, actor ethnicity is not available for the majority of actors (available for 99719/395202 = 25.2%)... Upon observing the dataset, **we hypothesized that the actors with known ethnicity are those with more publicity**, so they are more likely to play main roles in the movies. The ethnicity distribution of these main actors can be representative of which racial group is more or less featured in the movie. Having this in mind, we will proceed to visualize actors' racial group distribution for franchise and non-franchise movies.
 {% include graphs/plot_12.html %}
 
-[Racial group distribution comparison] bar chart
 
 The percentages in each of the plots above sum up to 100%. Notice that **compared to non-franchise movies, franchise movies have fewer percentage of Asian actors** (Franchise: 14.78%, Non-franchise: 31.18%). If we compared this to the 4 pie charts from the previous section above, the two pie charts on the righthand side of the figure show that the proporitions of movies from Asia (excluding Russia, Oceania and Middle East) in franchise and non-franchise movies are not as different as the disparity observed earlie in Asian actor percentages.
 
@@ -74,11 +71,11 @@ This means that **the disparity in the percentage of Asian actors comes from fac
 #### Sentimental analysis
 In this section, we examine the narrative of each character in movie plots. We leveraged GPT o4-mini to extract adjectives related to each character, and calculate sentiment scores using TextBlob by taking an average of sentiment scores for adjectives. We show examples of positive and negative adjectives extracted:
 
-[word cloud]
+{% include graphs/plot_13.html %}
 
 We also plot the distribution of sentiment score per racial group. Note that among 99719 actors whose ethnicity information is available, we could only extract adjectives for 31095 characters (=actors). This is because some characters are not mentioned in the movie plot at all.
 
-[Movie plot]
+{% include graphs/plot_14.html %}
 
 It seems like there is not much difference in the inter-quantile ranges (Q3-Q1) across groups. With our dataset, we did not have enough actors with ethnicity information to conduct the sentiment analysis per genre per country, but if we were able to do that, this could have illustrated the racial bias existant in the movie industry such as which group is more likely to play a hero/heroin role in romance movies.
 
@@ -92,7 +89,7 @@ Too be as rigorous as possible all the values regarding expenses were adjusted t
 
 In general franchise movies has a larger budget then the other movies, but the difference is even more significant when looking at average revenue. 
 [box plot budget 13]
-{% include graphs/plot_4.html %}
+{% include graphs/plot_13.html %}
 
 Let’s finally, ask the question on everyone’s minds: How well do they perform? How high is their box office revenue? 
 [box plot revenue 8]
