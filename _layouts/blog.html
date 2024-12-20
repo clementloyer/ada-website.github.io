@@ -34,16 +34,17 @@
         margin-top: 30px; margin-bottom: 20px; margin-left: 5px;">
       "Is it worth watching the next movies as the sequel continues?" <br><br>
       “Are franchised movies more successful than non-franchised movies?”.
-      
       </h1>
+
+      <h1 style="font-size: 20px;font-weight: 600;margin-top: 60px;">To answer these questions, we first have to look at what we’re working with !</h1>
+
        <p>
-        <br>
-        To answer these questions, we first have to look at what we’re working with !
+        
         <br>
         The orginal CMU dataset contains <strong>42,306</strong> movies, and each movie has various data (e.g., <code class="language-plaintext highlighter-rouge">title</code>, <code class="language-plaintext highlighter-rouge">year</code>, <code class="language-plaintext highlighter-rouge">genre</code>) as well as a summary. 
         This makes a lot of data to handle! Among all these movies, <strong>5,136</strong> were identified as part of a franchise, which still leaves plenty of data to analyse.
       </p>
-      <div class="graph-container">
+      <div class="graph-container" >
         {% include graphs/franchise_pie.html %}
       </div>
       
@@ -69,6 +70,15 @@
         </p>
       </blockquote>
       
+      <p>
+        Over the last century, there have been lots and lots of movies produced as part of franchises over the world. 
+        Some franchises existed for short periods of time with only a few movies, while others continued through decades! 
+        <br><br>
+        The graph below is a global visualisation of all the franchises that existed over the last century. 
+        Each franchise is represented by a line starting at the first movie release year and ending with the release of the last movie.
+        <br><br>
+        <em>Feel free to use the dropdown menus to visualize the franchise of different parts of the world, with various box offices...</em>
+      </p>
 
       <iframe 
         src="https://pierreg2.pythonanywhere.com/" 
@@ -81,10 +91,6 @@
         Now that we've laid out and explored what truly defines a franchise, let’s dive deeper to uncover what really sets them apart from non-franchise movies. 
         Get ready for some fascinating insights!
       </p>
-
-      <div class="graph-container" width="100%">
-        {% include graphs/plot_4.html %}
-      </div>
       
 
       <section class="articles">
@@ -107,13 +113,14 @@
       </section>
 
       <p>
-        Now we're talking about bivariate analysis.
+        With a crystal-clear understanding of the unique traits of franchise movies, it’s time to ask: how do these features interact, and do they hold the key to a franchise's success? 
+        Is the second movie always worst ? Let’s find out!
       </p>
 
       <section class="articles">
         <article class="article">
           <h2 class="article-title">
-            <a href="{{site.baseurl}}/posts/bivariate"> The Biavariate Story </a>
+            <a href="{{site.baseurl}}/posts/bivariate"> The Biavariate Story : Let's Dive In</a>
           </h2>
           <small> Click to learn more </small>
 
@@ -129,12 +136,16 @@
         </article>
       </section>
 
+      <p>
+        With a crystal-clear understanding of the unique traits of franchise movies, it’s time to ask: how do these features interact, and do they hold the key to a franchise's success? 
+        Is the second movie always worst ? Let’s find out!
+      </p>
 
     
       <section class="articles">
         <article class="article">
           <h2 class="article-title">
-            <a href="{{site.baseurl}}/posts/pattern-investigation"> Pattern Investigation </a>
+            <a href="{{site.baseurl}}/posts/pattern-investigation"> Pattern Investigation by Greti</a>
           </h2>
           <small> Click to learn more </small>
 
