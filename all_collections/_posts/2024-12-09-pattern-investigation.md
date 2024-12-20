@@ -27,31 +27,40 @@ Here the main genre is `horror` and `thriller`; this combination makes it really
 
 ---
 
-There are a few other interesting things to notice, first most of the franchise kind of perform the same in terms of ratio across every genre and budget. The thing that differentiate a franchise that performs well from one that performs really well is a outlier behaviour that with this dataset cannot be explained clearly. 
+{% include graphs/franchise_clusters_2.html %}
 
-However, something is still missing, we see that the general behaviour of franchise successfulness  varies a lot but we have no info yet on the success inside a franchise between the different movies in a franchise. That's why in the next part we're going to look deeper at the interaction between the first a second and: 
+**Outliers:** The outliers are the franchise that the algorithm couldn't group with the other franchise, we have James Bond which was already used as an example and two less known franchise that got separated for their high vote (note that those have genre closest to the horror/thriller cluster 4 that's why its consider high)
+
+There are a few other interesting things to notice, first most of the franchise kind of perform the same in terms of ratio across every genre and budget. The thing that differentiate a franchise that performs well from one that performs really well is a outlier behavior that with this dataset cannot be explained clearly. 
+
+However, something is still missing, we see that the general behavior of franchise successfulness  varies a lot but we have no info yet on the success inside a franchise between the different movies in a franchise. That's why in the next part we're going to look deeper at the interaction between the first a second and: 
 > When a movie is successful, wanting to continue the story is always tempting; but how do we make a second successful movie, or even eventually, a successful franchise?
 
 
-A similar clusterings method was used but now to group common feature of both the first and second movies. In order to make it more interppretable and have better insight of common behaviour the dataset was separated in two main category:
+A similar clustering method was used but now to group common feature of both the first and second movies. In order to make it more interppretable and have better insight of common behaviour the dataset was separated in two main category:
 - The franchises were the first movie has a better ratio than the second one, they were assign a positive cluster number
 - The franchises were the second movie has a bettwe ratio, they were asign a stricly negative cluster number
 
-Here are the results of the clustering:
+Looking at the results, we first notice that there's still co  mmon behavious that budget and revenue are corelated, we also observe that we have different range of budget/revenue separated. The genre feature still has a strong impact on the clusterisatiton too. Another interesting fact is about the ratio. Since we grouped the franchise, a common behaviour for franchise with a increase ratio is that a decrease of budget was done and vis ver ca.
 
-
-First, there's still common behavious that budget and revenue are corelated, we also observe that we have different range of budget/revenue separated. The genre feature still has a strong impact on the clusterisatiton too.
-
-Another interesting fact is about the ratio. Since we grouped the franchise, a common behaviour for franchise with a increase ratio is that a decrease of budget was done and vis ver ca.
-
-**Cluster -3:**
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+  <div>
+    {% include graphs/1_2_clusters.html %}
+  </div>
+  <div>
+<p>
+<b>Cluster -3:</b>
 First Cluster where the ratio has improved, it is mainly high budget movies that didn't got a significant increase of budget for the second movie but performed even better, the vote average didnt change. It has a main genre of `Action` and `Adventure`.
-
-**Cluster -2:**
+</p><p>
+<b>Cluster -2:</b>
 This is a really interesting cluster, it looks like a part of those second movie were not really apriciated even tho it got a increased in revenue from the first movie, maybe the fame of the first movie was used to create a lowered budget one to make a second movie ? Note that its mainly comedy, drama and romance, which can also sometime be genre that are harder to make a second story.
-
-**Cluster -1:**
+</p><p>
+<b>Cluster -1:</b>
 This is similar cluster to the cluster -3 but with lower budget and revenue
+</p><p>
+<b>Cluster 1:</b>
+First cluster where the second movie ratio is worse, its not a big cluster because it consist of horror and thriller movies which is not a majority in the data set. It also look line it got a pretty clear vote difference and also a 
+</p>
+  </div>
+</div>
 
-**Cluster 1:**
-First cluster where the second movie ratio is worse,
