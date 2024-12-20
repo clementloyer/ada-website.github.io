@@ -5,26 +5,25 @@ date: 2024-12-17
 categories: ["Data story", "Milestone 3"]
 ---
 
-## Univariate analysis : LOOK AT OUTLIERS AND SINGLE THEM OUT
-Throughtout the entire data story we will have a red line exemple, how about one of the greastest movie franchise... **Star Wars**
+## Univariate analysis : 
+In this section, we'll look at each feature of our movies (stay tuned !) and compare them with non-franchised movies in order to look for eventual differences. As a bonus, throughtout the entire data story, we will highlight a franchise to illustrate our discoveries. How about one of the greastest movie franchise of all times ? ... **Star Wars**
 
-How do should we compare franchise and non-franchise movies? Let's break it down step by step:
+But let's get back to business : which features should we look at ?
 
 ### Genres
 First, what about the **genres** of movies?
 
 {% include graphs/plot_4.html %}
-Here, we can see that Dramas and Romances are a lot more present (three and two times more, respectively) in non-franchise movies than in franchise movies. Why is that ? Do the viewers lose interest when they are presented multiple dramas in a row ? If so, how would that translate ? In worse ratings ? Less box-office revenues ? 
+Here, we can see that Dramas and Romances are a lot more present (three and two times more, respectively) in non-franchise movies than in franchise movies. The opposite is true for Action, Adventure, and Science-Fiction movies : they are around twice as present in franchise movies! Why is that ? Do the viewers lose interest when they are presented multiple dramas in a row ? If so, how would that translate ? In worse ratings ? Less box-office revenues ? We'll see ...
 
-The opposite is true for Action, Adventure, and Science-Fiction movies : they are around twice as present in franchise movies!
-
-What a coincidence **Star Wars** has exaclty those genres!
+What a coincidence ! **Star Wars** has exaclty those genres!
 
 ### Time representation
-The release date distributions are relatively similar overall. However, most franchises tend to have closely spaced release periods for their entire movies. This pattern aligns with the fact that the majority of franchises consist of four movies or fewer. That said, exceptions do exist—for exemple the Bambi collection includes only two movies, but the releases are far apart (1942 and 2006).
+The release date distributions are relatively similar overall. However, most franchises tend to have closely spaced release periods for their entire movies. This pattern aligns with the fact that the majority of franchises consist of four movies or fewer. That said, exceptions do exist —for exemple the Bambi collection includes only two movies, but the releases are far apart (1942 and 2006).
+
 {% include graphs/Franchise_density.html %}
 ### Countries repartition
-Which countries produce movies? Is there a distinction between the countries of origin for franchise and non-franchise films?
+How about we ask ourselves which countries produce movies? Do some countries produce (and therefore consume) more franchise movies ?
 
 To begin, let's examine a network graph to visualize where the movies were produced and how the countries are interconnected.
 Franchise movies : 
@@ -34,21 +33,22 @@ Other movies :
 
 {% include graphs/plot_7.html %}
 
-To be more rigorous, let's dive into the distribution of countries:
-{%include graphs/plot_7_2.html%}
+Humm, as pretty as it is, nothing meaningful can be extracted from these maps ... Let's look closer :
+
+{%include graphs/plot_7_3.html%}
 We see that the movies coming from the United-States, Japan, Hong-Kong and Canada represent more of the total franchise movies than for non-franchise movies! 
 The presence of the USA is not a surprise, everyone knows the influence of Holloywood and the multpile blockbuster franchise such as the Marvel, Superman, etc... 
 
 How about Japan? If you go deeper, most of the franchise from Japan are reinterpreted mangas such as: Tora-san (48 movies), Doremon (33 movies) and also the well known One piece, Dragon ball Z...
 
-Funny, **Star Wars** is produced in the United-State! 
+Funny, **Star Wars** is produced in the United-State!
 ### Is there a difference in public appreciation between franchise movies and non-franchise movies?
 
-This is the distribution of the average score vote for both franchise and non-franchise, it is skewed distribution. The median of both are close (6.1 for franchise, 6 for non franchise), there is no important difference between the two types of movies. 
+To first get a sense at franchise movies are received by the publice in general, let's look at the distribution below : for now, when comparing franchises as a whole, the difference in franchise vs non-franchised movies isn't striking. **Star Wars** has a rate of 7,5, it is not surp^ising that this famous saga is above the average. But it doesn't stop here !
+
+ 
 {% include graphs/plot_17.html %}
-
-
-**Star Wars** has a rate of 7,5, it is not surp^ising that this famous saga is above the average. 
+ 
 
 ### Actor identity analysis
 
@@ -72,7 +72,6 @@ This means that **the disparity in the percentage of Asian actors comes from fac
 In this section, we examine the narrative of each character in movie plots. We leveraged GPT o4-mini to extract adjectives related to each character, and calculate sentiment scores using TextBlob by taking an average of sentiment scores for adjectives. We show examples of positive and negative adjectives extracted:
 
 
-
 We also plot the distribution of sentiment score per racial group. Note that among 99719 actors whose ethnicity information is available, we could only extract adjectives for 31095 characters (=actors). This is because some characters are not mentioned in the movie plot at all.
 
 {% include graphs/plot_14.html %}
@@ -80,6 +79,8 @@ We also plot the distribution of sentiment score per racial group. Note that amo
 It seems like there is not much difference in the inter-quantile ranges (Q3-Q1) across groups. With our dataset, we did not have enough actors with ethnicity information to conduct the sentiment analysis per genre per country, but if we were able to do that, this could have illustrated the racial bias existant in the movie industry such as which group is more likely to play a hero/heroin role in romance movies.
 
 ### Movie revenue box office and their budget 
+And finally, the **money question** ! First 
+
 **How** much money did they cost?
 Does franchise movie have a largest budget? Yes! 
 
@@ -101,7 +102,7 @@ What is your favorite franchise? Harry Potter, Star Wars or James Bond?
 
 With this interactive graph now you can see which movies in its franchise had the best box office or the lowest, and even its budget. 
 
-SUPER INTERACTIVE PLOT 
+https://lavine.pythonanywhere.com/
 
  A franchise movie is more successful but  how can this be explained ? **What** makes them more successful ? **Why** does franchise exists ? 
 
