@@ -84,11 +84,11 @@ In general it is all most the double!
 Too be as rigorous as possible all the values regarding expenses were adjusted to the inflation rate at the release time of each movies. Now we can see the “real revenue” and “real budget”.
 
 In general franchise movies has a larger budget then the other movies, but the difference is even more significant when looking at average revenue. 
-[box plot budget]
+[box plot budget 13]
 {% include graphs/plot_4.html %}
 
 Let’s finally, ask the question on everyone’s minds: How well do they perform? How high is their box office revenue? 
-[box plot revenue]
+[box plot revenue 8]
 Here the difference is even more flagrant! In average a franchise movie makes 5 times more box office revenue then other movies! 
 
 Are you persuaded now that a movie in a franchise is more successful? 

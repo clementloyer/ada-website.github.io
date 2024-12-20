@@ -26,10 +26,12 @@ Let's see if the budget and revenue increases or not throughout the franchise :
 
 It decreases. The stereotype continues...
 
+The ratio of the revenue over the budget decreases also. 
+[plot 20 ]
 
 **What** are the most profitable **genres**? 
 
-PLOT "ADJUSTED BOX OFFICE REVENUE BY GENRE" 
+PLOT "ADJUSTED BOX OFFICE REVENUE BY GENRE" 16
 
 Adventure, Fantasy, Animation, Science Fiction, and Action are the top five most profitable genres. Interestingly, this does not align with the most frequently occurring genres. 
 
@@ -41,7 +43,7 @@ Acctually yes!
 One might wonder whether the time between two releases affects revenue or average votes. It seems logical that this gap could trigger nostalgia and, in turn, enhance both factors. However, that’s not the case!
 
 [PLOT :Box office of a movie and the average vote of a movie vs the year difference between the movies]
-To go further in this analysis comparing if a franchise comes from a known book by 
+To explore further in this analysis, we could compare whether a franchise originates from a well-known book or is linked to the sale of movie-related games, providing a clearer understanding of the potential nostalgia effect.
 
 ### How well are entire franchises succesful? 
 On the other hand the franchise's average vote are correlated with the franchise's profit.[correlation vote average budget]
