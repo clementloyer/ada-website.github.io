@@ -16,22 +16,22 @@ To get an idea of how the cluster were made, the genre is the most clear one to 
 **Cluster 1:**
 _Number of franchises: 28_  
 _Highlight: Alvin and the Chipmunks, Dirty Dancing, High School Musical, Grease_  
-It's mainly composed of musical franchise, the combination of the `music` and `drama`, looking at the franchise also helps. It is also a minority in the dataset.
+It's mainly composed of musical franchise, the combination of the **music** and **drama**, looking at the franchise also helps. It is also a minority in the dataset.
 
 **Cluster 2:**
 _Number of franchises: 218_  
 _Highlight: Home Alone, Toy Story, Twilight, Lion King, Happy Feet, Ice Age_  
-This is one of the first really big cluster, it looks like its mostly teenage movies, animated movies, Disneys and family sitcom. The main genre is `comedy`, `family` and `adventure`.
+This is one of the first really big cluster, it looks like its mostly teenage movies, animated movies, Disneys and family sitcom. The main genre is **comedy**, **family** and **adventure**.
 
 **Cluster 3:**
 _Number of franchises: 168_  
 _Highlight: Star Wars, Spider-Man, Jurassic Park, Tomb Raider, The Matrix_  
-Also a big cluster, it is mainly composed of `action` movies that requires a higher budget to be produced and
+Also a big cluster, it is mainly composed of **action** movies that requires a higher budget to be produced and
 
 **Cluster 4:**
 _Number of franchises: 166_  
 _Highlight: Scream, Alien, The Exorcist, Resident Evil, Saw, The Human Centipede_  
-Here the main genre is `horror` and `thriller`; this combination makes it really clear what type of movie this is about. A noticeable feature of those franchise is their remarkably low average budgets, this help maximizing their potential to achieve an outstanding revenue-to-budget ratio.
+Here the main genre is **horror** and **thriller**; this combination makes it really clear what type of movie this is about. A noticeable feature of those franchise is their remarkably low average budgets, this help maximizing their potential to achieve an outstanding revenue-to-budget ratio.
 
 ---
 
@@ -61,11 +61,11 @@ Looking at the results, we first notice that there's still common behaviour that
 <p>
 <b>Cluster -4:</b><i> Number of franchises: 8<br>
 Highlight: Harry Potter, The Lord of the Rings, The Dark Knight, Ghost Rider</i>
-First cluster, where the ratio has improved, it is mainly high budget movies that didn't got a significant increase of the budget for the second movie but performed even better, the vote average didn't change. It has a main genre of Action and Adventure.
+First cluster, where the ratio has improved, it is mainly high budget movies that didn't got a significant increase of the budget for the second movie but performed even better, the vote average didn't change. It has a main genre of <b>Action</b> and <b>Adventure</b>.
 </p><p>
 <b>Cluster -3:</b><i> Number of franchises: 13<br>
 Highlight: Ice Age, Twilight, Austin Powers </i>
-This is a really interesting cluster; it looks like a part of those second movies were not really appreciated according to the rating even though it got an increased of revenue from the first movie, maybe the fame of the first movie was used to create a lowered budget one to make a second movie? This could explain the revenue of the second movie being higher and the rating lower. Note that its mainly comedy, drama and romance, which can also sometime be genres that are harder to make a second story.
+This is a really interesting cluster; it looks like a part of those second movies were not really appreciated according to the rating even though it got an increased of revenue from the first movie, maybe the fame of the first movie was used to create a lowered budget one to make a second movie? This could explain the revenue of the second movie being higher and the rating lower. Note that its mainly <b>comedy</b>, <b>drama</b> and <b>romance</b>, which can also sometime be genres that are harder to make a second story.
 </p><p>
 <b>Cluster -2:</b><i> Number of franchises: 4<br>
 Highlight: Arthur and the Invisibles, World of Watches, The Transporter, The Boondock Saints</i>
@@ -87,16 +87,16 @@ First cluster where the second movie ratio is worse, its not a big cluster. It a
   <p>
    <b>Cluster 2:</b><i> Number of franchises: 66<br>
 Highlight: Predator, Saw, Friday the 13th, X Files, Resident Evil, Piranha 3D </i><br>
-This is the horror and thriller cluster, it is also lower budget movies and we notice also that around a fourth of the 2nd movie actually don't have a higher revenue than budget.
+This is the <b>horror</b> and <b>thriller</b> cluster</b>, it is also lower budget movies and we notice also that around a fourth of the 2nd movie actually don't have a higher revenue than budget.
     </p><p>
     <b>Cluster 3:</b><i> Number of franchises: 84<br>
 Highlight: American Pie, Ghostbusters, Scary Movie, Legally Blonde,  Scooby-Doo, Power Rangers </i><br>
-It's the comedy and family clusters, still around a fourth of the second don't have a higher revenue than a budget but its less worse.
+It's the <b>comedy</b> and <b>family</b> clusters, still around a fourth of the second don't have a higher revenue than a budget but its less worse.
  </p><p>
 <b>Cluster 4:</b><i> Number of franchises: 41<br>
 Highlight: Star Wars, Indiana Jones, Fast and the Furious, Transformers, Sherlock Holmes, The Expendables, Iron Man
 </i>
-This cluster and the next one are the high budget ones, that get worse result than the first movie in terms of ratio but actually it stays mostly higher than one. It means that even though the ratio is worse around the revenue stays the same, because budget increased. Here we have the action and blockbusters.
+This cluster and the next one are the high budget ones, that get worse result than the first movie in terms of ratio but actually it stays mostly higher than one. It means that even though the ratio is worse around the revenue stays the same, because budget increased. Here we have the <b>action</b> and <b>blockbusters</b>.
  </p>
 
   </div>
@@ -106,7 +106,7 @@ This cluster and the next one are the high budget ones, that get worse result th
 <b>Cluster 5:</b><i> Number of franchises: 17<br>
 Highlight: Shrek, Toy Story, Happy Feet, The Jungle Book, Stuart Little, Garfield
 </i>
-Here we have more the comedy, animation and family movies but the behaviour is around the same.
+Here we have more the <b>comedy</b>, <b>animation</b> and <b>family</b> movies but the behaviour is around the same.
  </p>
 </div>
 </div>
