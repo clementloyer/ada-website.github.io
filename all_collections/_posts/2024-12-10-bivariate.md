@@ -22,15 +22,10 @@ As supected before there is a positvie linear regression between revenue and bud
 
 Now we might questioned what else could influence the success of franchise movies. 
 
-Let's see if the budget and revenue increases or not throughout the franchise : 
-
-[bar chart budget/revenue movie order]
+Let's see if the ratio of the budget over the revenue increases or not throughout the franchise : 
+{% include graphs/plot_20.html %}
 
 It decreases. The stereotype continues...
-
-{% include graphs/plot_20.html %}
-The ratio of the revenue over the budget decreases also. 
-
 
 
 **What** are the most profitable **genres**? 
