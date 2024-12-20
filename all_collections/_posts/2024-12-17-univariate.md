@@ -46,7 +46,7 @@ To begin with, we look at actor gender distribution of franchise and non-franchi
 
 It seems that actor gender distribution remains the same for franchise and non-franchise movies. **This is unsurprising as we can agree that there are particulalry many female characters in franchise movies than non-franchise movies**, at least anecdotally.
 
-Next, we shift our focus to ethnicity groups. Contrary to actor gender information, actor ethnicity is not available for the majority of actors (available for 99719/395202 $\approx$ 25.2%)... Upon observing the dataset, **we hypothesized that the actors with known ethnicity are those with more publicity**, so they are more likely to play main roles in the movies. The ethnicity distribution of these main actors can be representative of which racial group is more or less featured in the movie. Having this in mind, we will proceed to visualize actors' racial group distribution for franchise and non-franchise movies.
+Next, we shift our focus to ethnicity groups. Contrary to actor gender information, actor ethnicity is not available for the majority of actors (available for 99719/395202 = 25.2%)... Upon observing the dataset, **we hypothesized that the actors with known ethnicity are those with more publicity**, so they are more likely to play main roles in the movies. The ethnicity distribution of these main actors can be representative of which racial group is more or less featured in the movie. Having this in mind, we will proceed to visualize actors' racial group distribution for franchise and non-franchise movies.
 
 [Racial group distribution comparison] bar chart
 
@@ -62,6 +62,7 @@ In this section, we examine the narrative of each character in movie plots. We l
 We also plot the distribution of sentiment score per racial group. Note that among 99719 actors whose ethnicity information is available, we could only extract adjectives for 31095 characters (=actors). This is because some characters are not mentioned in the movie plot at all.
 
 [Movie plot]
+
 It seems like there is not much difference in the inter-quantile ranges (Q3-Q1) across groups. With our dataset, we did not have enough actors with ethnicity information to conduct the sentiment analysis per genre per country, but if we were able to do that, this could have illustrated the racial bias existant in the movie industry such as which group is more likely to play a hero/heroin role in romance movies.
 
 ### Movie revenue box office
