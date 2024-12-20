@@ -168,3 +168,18 @@ code.language-plaintext.highlighter-rouge {
   color: #000000; /* Dark text */
   padding: 2px 4px;
 }
+.content blockquote {
+  padding-left: 1.42188rem;
+  margin-bottom: 1.75rem;
+  font-style: italic;
+  font-weight: 100;
+  border-left: 0.3rem solid var(--white-2);
+}
+
+.blog blockquote {
+  padding-left: 1.42188rem;
+  margin-bottom: 1.75rem;
+  font-style: italic;
+  font-weight: 100;
+  border-left: 0.3rem solid var(--white-2);
+}
