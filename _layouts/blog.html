@@ -32,8 +32,8 @@
         font-size: 25px; 
         line-height: 30px; 
         margin-top: 30px; margin-bottom: 20px; margin-left: 5px;">
-      "What makes a good movie franchise?" <br> 
-      “Are franchised movies more profitable than non-franchised movies?”.
+      "Do franchise movies degrade in quality in revenue as the sequel continues?" <br> 
+      “Are franchised movies more successful than non-franchised movies?”.
       
       </h1>
        <p>
@@ -66,7 +66,7 @@
 
       <iframe 
         src="https://pierreg2.pythonanywhere.com/" 
-        style="width: 100%; height: 1200px; border: none; border-width: 1px;"> 
+        style="width: 100%; height: 950px; border: none; border-width: 1px;"> 
         
       </iframe>
       
@@ -79,10 +79,6 @@
       </p>
 
       <div class="graph-container" width="100%">
-        {% include graphs/boxplot_intro.html %} 
-      </div>
-
-      <div class="graph-container" width="100%">
         {% include graphs/plot_4.html %}
       </div>
       
@@ -90,17 +86,44 @@
       <section class="articles">
         <article class="article">
           <h2 class="article-title">
-            <a href="{{site.baseurl}}posts/pattern-investigation"> Franchise Analysis </a>
+            <a href="/posts/univariate"> Franchised vs. Unfranchised : The Duel </a>
           </h2>
-          <small> Click to learn more </small>
+          <small> Click to watch the fight</small>
+
           <div class="categories">
-            <a href="#!" data-base-url="{{site.baseurl}}" class="category"
+            <a href="#!" data-base-url="" class="category"
+              >Univariate</a
+            >
+          
+            <a href="#!" data-base-url="" class="category"
               >Data Analysis</a
             >
           </div>
         </article>
       </section>
 
+      <p>
+        Now we're talking about bivariate analysis.
+      </p>
+
+      <section class="articles">
+        <article class="article">
+          <h2 class="article-title">
+            <a href="/posts/bivariate"> The Biavariate Story </a>
+          </h2>
+          <small> Click to learn more </small>
+
+          <div class="categories">
+            <a href="#!" data-base-url="" class="category"
+              >Bivariate</a
+            >
+          
+            <a href="#!" data-base-url="" class="category"
+              >Data Analysis</a
+            >
+          </div>
+        </article>
+      </section>
 
 
       <section class="articles">
