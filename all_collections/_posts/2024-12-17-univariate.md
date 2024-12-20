@@ -38,7 +38,7 @@ Funny, **FF** is produced in
 
 ### Actor identity analysis
 
-Racial bias is an important topic in the movie industry and we were interested in **whether the actors of certain ethnicity/gender groups appear more or less commonly in franchise movies**. Are they depicted positively (hero/heroine) or negatively (villain)?
+Racial bias is an important topic in the movie industry and we were interested in **whether the actors of certain ethnicity/gender groups appear more or less commonly in franchise movies**. Are they depicted positively (*hero/heroine*) or negatively (*villain*)?
 
 To begin with, we look at actor gender distribution of franchise and non-franchise movies.
 
