@@ -98,7 +98,13 @@ What is your favorite franchise? Harry Potter, Star Wars or James Bond?
 
 With this interactive graph now you can see which movies in its franchise had the best box office or the lowest, and even its budget. 
 
-https://lavine.pythonanywhere.com/
+<iframe 
+        src="https://lavine.pythonanywhere.com/"
+        style="width: 100%; height: 950px; border: none; border-width: 1px;"> 
+        
+</iframe>
+
+
 
  A franchise movie is more successful but  how can this be explained ? **What** makes them more successful ? **Why** does franchise exists ? 
 
