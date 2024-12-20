@@ -18,9 +18,9 @@
       <h1 style="color: #2471ff;  font-family: 'Playfair Display'; font-style: italic; font-weight: 900; font-size: 90px; line-height: 75px; margin-top: -50px; margin-bottom: 100px; text-decoration: underline; text-decoration-thickness: 1px;">the <br> secret <br> formula</h1>
       <p>It is often believed that the second movie is always worse than the first one. 
         However, human memory tends to be influenced by nostalgia, and it remains uncertain whether this classic dinner table debate around movie franchises stands on tangible evidence. 
-        In this project, we aim to settle this debate by analyzing the <strong>list of movies and supplemental data from</strong> 
+        In this project, we aim to settle this debate by analyzing the movie data from 
         <a href="https://www.cs.cmu.edu/~ark/personas/" target="_blank" style="color: #676767; text-decoration: underline;">
-        the CMU Movie Summary Corpus</a>.
+        the CMU Movie Summary Corpus</a> supplemented by <a href="https://www.themoviedb.org/" target="_blank" style="color: #676767; text-decoration: underline;">the TMDB dataset</a>. The additional data set contains an additional category which reveals if a movie is part of a franchise <em>(or not)</em>; is used to group same-franchise movies as collections. 
         <br><br>        
         In the premices of this data analysis, multiple questions arose.
         </p>  
@@ -32,16 +32,19 @@
         font-size: 25px; 
         line-height: 30px; 
         margin-top: 30px; margin-bottom: 20px; margin-left: 5px;">
-      "What makes a good movie franchise?" <br> 
-      “Are franchised movies more profitable than non-franchised movies?”.
-      
+      "Is it worth watching the next movies as the sequel continues?" <br><br>
+      “Are franchised movies more successful than non-franchised movies?”.
       </h1>
-       <p>
-      
 
-        To answer these questions, we first have to look at what we’re working with !
+      <h1 style="font-size: 20px;font-weight: 600;margin-top: 60px;">To answer these questions, we first have to look at what we’re working with !</h1>
+
+       <p>
+        
+        <br>
+        The orginal CMU dataset contains <strong>42,306</strong> movies, and each movie has various data (e.g., <code class="language-plaintext highlighter-rouge">title</code>, <code class="language-plaintext highlighter-rouge">year</code>, <code class="language-plaintext highlighter-rouge">genre</code>) as well as a summary. 
+        This makes a lot of data to handle! Among all these movies, <strong>5,136</strong> were identified as part of a franchise, which still leaves plenty of data to analyse.
       </p>
-      <div class="graph-container">
+      <div class="graph-container" >
         {% include graphs/franchise_pie.html %}
       </div>
       
@@ -57,44 +60,120 @@
         margin-top: -50px; margin-bottom: 20px;">
       But, what is a <span style=" font-family: JetBrains Mono">[franchise]</span>?</h1>
 
+
+      <blockquote>
+        <p>
+          Have you heard of <strong>Star Wars</strong>? <strong>Harry Potter</strong>? Then you know what a franchise is! 
+          They are basically what we often call <span class="keyword-highlight">Sagas</span>. 
+          From a data analysis point of view, we consider as movie franchise <strong>any sequel of at least two movies</strong>, whose stories are connected, or that share similarities in terms of characters, plot, and/or setting. 
+          That way, both the Harry Potter series or the multiple remakes of Alice in Wonderland are considered franchises.
+        </p>
+      </blockquote>
+      
       <p>
-        Have you heard of <strong>Star Wars</strong>? <strong>Harry Potter</strong>? Then you know what a franchise is! 
-        They are basically what we often call <span class="keyword-highlight">Sagas</span>. 
-        From a data analysis point of view, we consider as movie franchise <strong>any sequel of at least two movies</strong>, whose stories are connected, or that share similarities in terms of characters, plot, and/or setting. 
-        That way, both the Harry Potter series or the multiple remakes of Alice in Wonderland are considered franchises.
+        Over the last century, there have been lots and lots of movies produced as part of franchises over the world. 
+        Some franchises existed for short periods of time with only a few movies, while others continued through decades! 
+        <br><br>
+        The graph below is a global visualisation of all the franchises that existed over the last century. 
+        Each franchise is represented by a line starting at the first movie release year and ending with the release of the last movie.
+        <br><br>
+        <em>Feel free to use the dropdown menus to visualize the franchise of different parts of the world, with various box offices...</em>
       </p>
 
       <iframe 
         src="https://pierreg2.pythonanywhere.com/" 
-        style="width: 100%; height: 1200px; border: none; border-width: 1px;"> 
+        style="width: 100%; height: 950px; border: none; border-width: 1px;"> 
         
       </iframe>
       
       
       <p>
-        Have you heard of <strong>Star Wars</strong>? <strong>Harry Potter</strong>? Then you know what a franchise is! 
-        They are basically what we often call <span class="keyword-highlight">Sagas</span>. 
-        From a data analysis point of view, we consider as movie franchise <strong>any sequel of at least two movies</strong>, whose stories are connected, or that share similarities in terms of characters, plot, and/or setting. 
-        That way, both the Harry Potter series or the multiple remakes of Alice in Wonderland are considered franchises.
+        Now that we've laid out and explored what truly defines a franchise, let’s dive deeper to uncover what really sets them apart from non-franchise movies. 
+        Get ready for some fascinating insights!
       </p>
-
-      <div class="graph-container" width="100%">
-        {% include graphs/boxplot_intro.html %} 
-      </div>
-
-      <div class="graph-container" width="100%">
-        {% include graphs/plot_4.html %}
-      </div>
       
 
       <section class="articles">
         <article class="article">
           <h2 class="article-title">
-            <a href="{{site.baseurl}}posts/pattern-investigation"> Franchise Analysis </a>
+            <a href="{{site.baseurl}}/posts/univariate"> Franchised vs. Unfranchised : The Duel </a>
+          </h2>
+          <small> Click to watch the fight</small>
+
+          <div class="categories">
+            <a href="#!" data-base-url="" class="category"
+              >Univariate</a
+            >
+          
+            <a href="#!" data-base-url="" class="category"
+              >Data Analysis</a
+            >
+          </div>
+        </article>
+      </section>
+
+      <p>
+        With a crystal-clear understanding of the unique traits of franchise movies, it’s time to ask: how do these features interact, and do they hold the key to a franchise's success? 
+        Is the second movie always worst ? Let’s find out!
+      </p>
+
+      <section class="articles">
+        <article class="article">
+          <h2 class="article-title">
+            <a href="{{site.baseurl}}/posts/bivariate"> The Biavariate Story : Let's Dive In</a>
           </h2>
           <small> Click to learn more </small>
+
           <div class="categories">
-            <a href="#!" data-base-url="{{site.baseurl}}" class="category"
+            <a href="#!" data-base-url="" class="category"
+              >Bivariate</a
+            >
+          
+            <a href="#!" data-base-url="" class="category"
+              >Data Analysis</a
+            >
+          </div>
+        </article>
+      </section>
+
+      <p>
+        With a crystal-clear understanding of the unique traits of franchise movies, it’s time to ask: how do these features interact, and do they hold the key to a franchise's success? 
+        Is the second movie always worst ? Let’s find out!
+      </p>
+
+    
+      <section class="articles">
+        <article class="article">
+          <h2 class="article-title">
+            <a href="{{site.baseurl}}/posts/pattern-investigation"> Pattern Investigation by Greti</a>
+          </h2>
+          <small> Click to learn more </small>
+
+          <div class="categories">
+            <a href="#!" data-base-url="" class="category"
+              >Pattern</a
+            >
+          
+            <a href="#!" data-base-url="" class="category"
+              >Data Analysis</a
+            >
+          </div>
+        </article>
+      </section>
+
+      <section class="articles">
+        <article class="article">
+          <h2 class="article-title">
+            <a href="{{site.baseurl}}/posts/model-based-analysis"> Shapley value analysis: what is the recipe for franchise movies? </a>
+          </h2>
+          <small> Click to learn more </small>
+
+          <div class="categories">
+            <a href="#!" data-base-url="" class="category"
+              >Model Based</a
+            >
+          
+            <a href="#!" data-base-url="" class="category"
               >Data Analysis</a
             >
           </div>
@@ -102,40 +181,22 @@
       </section>
 
 
+      <h1 style="font-size: 35px;font-weight: 600;margin-top: 60px;margin-bottom: px; color: #2471ff;">We are</h1>
 
-      <section class="articles">
-        {% for post in site.posts %}
-        <article class="article">
-          <h2 class="article-title">
-            <a href="{{site.baseurl}}{{post.url}}"> {{post.title}} </a>
-          </h2>
-          {%if forloop.index == 1 %}
-            <small> Click to watch the fight </small>
-          {% endif %}
+      <h1 style="
+        color: #2471ff;  
+        font-family: 'Playfair Display'; 
+        font-style: italic; 
+        font-weight: 900; 
+        font-size: 40px; 
+        line-height: 75px; 
+        margin-top: 0; margin-bottom: 20px;">
+      Sapimatacle</h1>
+      <p>
+        TETTTETt On  teste un paragraphe la 
+      </p>
 
-          {%if forloop.index == 2 %}
-            <small> Click to learn more </small>
-          {% endif %}
-          
-          <div class="categories">
-            {% for c in post.categories %}
-            <a href="#!" data-base-url="{{site.baseurl}}" class="category"
-              >{{c}}</a
-            >
-            {% endfor %}
-          </div>
-        </article>
-
-        <!-- Add custom content between posts (works as loop number)-->
-        {% if forloop.index == 1 %}
-        <div class="special-content">
-          <h4>Midway Break</h4>
-          <p>Don't forget to check out my <a href="/about">About Me</a> page for more insights!</p>
-        </div>
-        {% endif %}
-
-        {%endfor%}
-      </section>
+      
       {% include footer.html %}
     </main>
     {% include category-modal.html%}
