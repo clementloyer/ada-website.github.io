@@ -21,7 +21,6 @@ Same as **FF**
 
 ### Time representation
 The release date distributions are relatively similar overall. However, most franchises tend to have closely spaced release periods for their entire movies. This pattern aligns with the fact that the majority of franchises consist of four movies or fewer. That said, exceptions do exist—for exemple the Bambi collection includes only two movies, but the releases are far apart (1942 and 2006).
-[time graph]
 {% include graphs/Franchise_density.html %}
 ### Countries repartition
 Which countries produce movies? Is there a distinction between the countries of origin for franchise and non-franchise films?
@@ -43,16 +42,10 @@ The presence of the USA is not a surprise, everyone knows the influence of Hollo
 How about Japan? If you go deeper, most of the franchise from Japan are reinterpreted mangas such as: Tora-san (48 movies), Doremon (33 movies) and also the well known One piece, Dragon ball Z...
 
 Funny, **FF** is produced in 
-### Rating of the movies 
-How were they appreciated by the public ?
+### Is there a difference in public appreciation between franchise movies and non-franchise movies?
 
 This is the distribution of the average score vote for both franchise and non-franchise, it is skewed distribution. The median of both are close (6.1 for franchise, 6 for non franchise), there is no important difference between the two types of movies. 
-
-It is often said that the second movie is not as good, but is that true? What are the average score threw the different movies in a franchise? 
-
-[vote through the sequel]
-
-At this stage of the data analysis, the stereotype holds: the average rating tends to drop for the second movie. However, as mentioned earlier, franchise films include several outliers. So, what could be the recipe to make the best possible sequel?
+[density vote 17]
 ### Actor identity analysis
 
 Racial bias is an important topic in the movie industry and we were interested in **whether the actors of certain ethnicity/gender groups appear more or less commonly in franchise movies**. Are they depicted positively (*hero/heroine*) or negatively (*villain*)?
@@ -82,7 +75,7 @@ We also plot the distribution of sentiment score per racial group. Note that amo
 
 It seems like there is not much difference in the inter-quantile ranges (Q3-Q1) across groups. With our dataset, we did not have enough actors with ethnicity information to conduct the sentiment analysis per genre per country, but if we were able to do that, this could have illustrated the racial bias existant in the movie industry such as which group is more likely to play a hero/heroin role in romance movies.
 
-### Movie revenue box officeand their budget 
+### Movie revenue box office and their budget 
 **How** much money did they cost?
 Does franchise movie have a largest budget? Yes! 
 
