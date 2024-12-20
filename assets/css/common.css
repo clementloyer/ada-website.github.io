@@ -162,3 +162,11 @@ hr {
 p {
   text-align: justify;
 }
+
+code.language-plaintext.highlighter-rouge {
+  background-color: #f8f9fa; /* Light gray */
+  color: #333333; /* Dark text */
+  padding: 2px 4px;
+  border-radius: 4px;
+  
+}
