@@ -6,6 +6,8 @@ markdown: kramdown
 #   name: Sharad Raj Singh Maurya
 #   email: dev_sharad@outlook.com
 
+baseurl: "/ada-website.github.io"
+
 plugins:
   - jemoji
   - jekyll-seo-tag
