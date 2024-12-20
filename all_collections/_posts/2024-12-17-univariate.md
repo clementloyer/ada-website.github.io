@@ -24,15 +24,13 @@ The presence of the USA is not a surprise, everyone knows the influence of Hollo
 How about Japan ? If you go deeper, most of the franchise from Japan are reinterpreted mangas such as : Tora-san (48 movies), Doremon (33 movies) and also the well known One piece, Dragon ball Z...
 
 Now, what about the genres of our movies ?
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <title>franchise_clusters Graph</title>
-</head>
-{% include graphs/plot_3.html}
-</html>
+
+
+
+{% include graphs/plot_3.html %} 
+{% include graphs/plot_7.html %}
+    
+
 
 Here, we can see that Dramas and Romances are a lot more present (three and two times more, respectively) in non-franchise movies than in franchise movies. Why is that ? Do the viewers lose interest when they are presented multiple dramas in a row ? If so, how would that translate ? In worse ratings ? Less box-office revenues ? 
 
