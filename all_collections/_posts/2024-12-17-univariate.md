@@ -33,9 +33,8 @@ Other movies :
 
 {% include graphs/plot_7.html %}
 
-To be more rigourus, let's dive in the countries repartitions: 
-[Pychart countries]
-{%include graphs/franchise_pie.html%}
+To be more rigorous, let's dive into the distribution of countries:
+{%include graphs/plot_7_2.html%}
 We see that the movies coming from the United-States, Japan, Hong-Kong and Canada represent more of the total franchise movies than for non-franchise movies! 
 The presence of the USA is not a surprise, everyone knows the influence of Holloywood and the multpile blockbuster franchise such as the Marvel, Superman, etc... 
 
